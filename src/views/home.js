@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Hero, HomeContent } from "../components";
+import { Hero, HomeContent } from "../Components";
 
 class Home extends React.Component {
     render() {

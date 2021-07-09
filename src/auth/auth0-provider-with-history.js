@@ -1,6 +1,7 @@
 import React from "react";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { withRouter } from "react-router-dom";
+
 class Auth0ProviderWithHistory extends React.Component {
     domain = process.env.REACT_APP_AUTH0_DOMAIN;
     clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;

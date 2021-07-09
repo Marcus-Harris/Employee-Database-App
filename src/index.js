@@ -10,13 +10,23 @@ import Footer from "./Components/footer";
 import Hero from "./Components/hero";
 import Loading from "./Components/loading";
 import NavBar from "./Components/nav-bar";
+import { Auth0Provider } from "@auth0/auth0-react";
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  // <Router>
+  //   <Auth0ProviderWithHistory>
+  //     <App />
+  //   </Auth0ProviderWithHistory>
+  // </Router>,
   <Router>
-    <Auth0ProviderWithHistory>
+    <Auth0Provider
+      domain="dev-t51e-uya.us.auth0.com"
+      clientId="paT2ZZ4Qu0qfGzqZeL0mYYLz9TfSceax"
+      redirectUri={"http://localhost:3000/add"} // this is just where the page goes after logging in
+    >
       <App />
-    </Auth0ProviderWithHistory>
+    </Auth0Provider>
   </Router>,
   document.getElementById("root")
 );

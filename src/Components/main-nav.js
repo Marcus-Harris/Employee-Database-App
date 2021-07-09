@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
+
 class MainNav extends React.Component {
     render() {
         return (
@@ -27,6 +28,22 @@ class MainNav extends React.Component {
                     activeClassName="router-link-exact-active"
                 >
                     External API
+                </NavLink>
+                <NavLink
+                    to="/add"
+                    exact
+                    className="nav-link"
+                    activeClassName="router-link-exact-active"
+                >
+                    New Entry
+                </NavLink>
+                <NavLink
+                    to="/view"
+                    exact
+                    className="nav-link"
+                    activeClassName="router-link-exact-active"
+                >
+                    Table
                 </NavLink>
             </div>
         );

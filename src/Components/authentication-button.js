@@ -7,11 +7,11 @@ import SignupButton from "./signup-button";
 class AuthenticationButton extends React.Component {
   render() {
     const { isAuthenticated } = this.props.auth0;
-    return isAuthenticated ? <LogoutButton /> : 
-    <span>
-      <LoginButton className="inline" id="floatleft"/>
-      <SignupButton className="inline" id="floatright"/>
-    </span>;
+    return isAuthenticated ? <LogoutButton /> :
+      <span>
+        <LoginButton className="inline" id="floatleft" />
+        <SignupButton className="inline" id="floatright" />
+      </span>;
   }
 }
 
