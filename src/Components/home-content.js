@@ -1,13 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import ChangeTheBackground from "./changeBG";
 
 class HomeContent extends React.Component {
     render() {
         return (
             <div className="next-steps">
-                <ChangeTheBackground />
                 <h2 className="my-5 text-center">What can I do next?</h2>
                 <div className="row">
                     <div className="col-md-5 mb-4">
