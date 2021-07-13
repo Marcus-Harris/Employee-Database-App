@@ -22,14 +22,6 @@ class MainNav extends React.Component {
                     Profile
                 </NavLink>
                 <NavLink
-                    to="/external-api"
-                    exact
-                    className="nav-link"
-                    activeClassName="router-link-exact-active"
-                >
-                    External API
-                </NavLink>
-                <NavLink
                     to="/add"
                     exact
                     className="nav-link"

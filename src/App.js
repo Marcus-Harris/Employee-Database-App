@@ -1,24 +1,3 @@
-// import React, { Component } from "react";
-// import AddEmployee from "./Components/AddEmployee";
-// import { Route, BrowserRouter as Router } from "react-router-dom";
-// import Table from "./Components/Table";
-// import Login from "./Components/Login";
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <Router>
-//         <Route exact path="/add" component={AddEmployee} />
-//         <Route exact path="/view" component={Table} />
-//         <Route exact path="/" component={Login} />
-//       </Router>
-//     );
-//   }
-// }
-
-// export default App;
-
-// src/app.js
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -45,7 +24,6 @@ const App = () => {
           <ProtectedRoute path="/add" component={AddEmployee} />
           <ProtectedRoute path="/view" component={Table} />
           <ProtectedRoute path="/profile" component={Profile} />
-          <ProtectedRoute path="/external-api" component={ExternalApi} />
         </Switch>
       </div>
       <Footer />
