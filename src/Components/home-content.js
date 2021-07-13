@@ -10,7 +10,7 @@ class HomeContent extends React.Component {
                     <div class="contactus">
                     <h6>Contact Us </h6>
                     <p id="emailheader">Email:</p>
-                    <p id="emailinfo">powerhouseteam@sevenindividuals.com </p>
+                    <p id="emailinfo"><a href="#" id="resourcelinks">powerhouseteam@sevenindividuals.com </a></p>
                     <p id="phonenumberheader">
                     Phone Number: </p>
                     <p id="phonenumber"> 123-456-7890</p>
@@ -31,13 +31,13 @@ class HomeContent extends React.Component {
                 <br></br>
                 <div class="resources">
                <h6>Resources</h6>
-                <p id="resourceinfo">www.carolinafintechhub.org
+                <p id="resourceinfo"><a href="#" id="resourcelinks">www.carolinafintechhub.org</a>
                     <br></br>
-                    www.group6.gov
+                    <a href="#" id="resourcelinks"> www.group6.gov</a>
                     <br></br>
-                    www.powerhouse.org
+                    <a href="#" id="resourcelinks">www.powerhouse.org</a>
                     <br></br>
-                    www.sevenindividuals.org
+                    <a href="#" id="resourcelinks"> www.sevenindividuals.org</a>
                 </p>
                 </div>
 
