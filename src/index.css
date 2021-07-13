@@ -91,7 +91,7 @@ code {
 }
 
 .news:hover .paragraph {
-  opacity: 1;
+  opacity: 75%;
 }
 
 .text {
@@ -107,9 +107,42 @@ code {
 }
 
 
-/*---------------- bottom information ---------- */
+/*---------------- Contact, Social Media, and Resource information ---------- */
 
 .bottom-info {
-  display: block;
+  column-count: 3;
+  column-gap: 40px;
+  height: 400px;
+  justify-content: center;
 }
 
+.contactus {
+  line-height: 10px;
+}
+#emailheader {
+  font-weight: bold;
+  font-size: 14px;
+}
+#emailinfo {
+  font-size: 12px;
+}
+
+#phonenumberheader {
+  font-weight: bold;
+  font-size: 14px;
+}
+#phonenumber {
+  font-size: 12px;
+}
+
+#addressheader {
+  font-weight: bold;
+  font-size: 14px;
+}
+#address {
+  font-size: 12px;
+}
+
+#resourceinfo {
+  font-size: 12px;
+}

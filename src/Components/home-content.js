@@ -6,30 +6,32 @@ class HomeContent extends React.Component {
     render() {
         return (
             <div class="bottom-info">
-                <div class="bottom1">
-                <h6>Contact Us </h6>
-                <p id="email">
-                   Email:<br></br>
-                   powerhouseteam@sevenindividuals.com 
-                </p><br></br>
-                <p id="phonenumber">
-                   Phone Number:<br></br>
-                   123-456-7890
-                </p><br></br>
-                <p id="address">
-                   980 Teamwork Path<br></br>
-                   Unite E0<br></br>
-                   Together, NC 73241
-                </p><br></br>
 
-                </div>
-                <div class="bottom2">
+                    <div class="contactus">
+                    <h6>Contact Us </h6>
+                    <p id="emailheader">Email:</p>
+                    <p id="emailinfo">powerhouseteam@sevenindividuals.com </p>
+                    <p id="phonenumberheader">
+                    Phone Number: </p>
+                    <p id="phonenumber"> 123-456-7890</p>
+                    <p id="addressheader">Address</p> 
+                    <p id="address">
+                    980 Teamwork Path
+                    Unite E0
+                    Together, NC 73241
+                    </p>   
+                    </div>
+                <br></br>
+                <br></br>
+
+                <div class="follow">               
                     <h6>Follow Us</h6>
-                  <img src="https://i.pinimg.com/originals/48/52/a5/4852a5cb7f4ad9a76365651cc3fa440c.png" height="100px" width="100px"></img>
+                  <img src="https://i.pinimg.com/originals/48/52/a5/4852a5cb7f4ad9a76365651cc3fa440c.png" height="200px" width="200px"></img>
                 </div>
-                <div class="bottom3">
-                <h6>Resources</h6>
-                <p>www.carolinafintechhub.org
+                <br></br>
+                <div class="resources">
+               <h6>Resources</h6>
+                <p id="resourceinfo">www.carolinafintechhub.org
                     <br></br>
                     www.group6.gov
                     <br></br>
@@ -39,8 +41,10 @@ class HomeContent extends React.Component {
                 </p>
                 </div>
 
+</div>
+ 
 
-            </div>
+            
                     
         );
     }
