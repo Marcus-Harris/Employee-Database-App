@@ -201,21 +201,46 @@ code {
 }
 
 .card-info {
-  background: rgba(59, 58, 58, 0.25);
+  background: rgba(255, 255, 255, 0.5);
   padding: 20px;
   height: auto;
   width: 100%;
-  box-shadow: 4px 4px 16px 4px #333;
+  box-shadow: 4px 4px 16px 4px rgb(51, 51, 51, 0.75);
 }
 
+
+.information {
+  line-height: 10px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  height: 220px;
+  width: 100%;
+  background-color: darkgray;
+  color: white;
+  margin: auto;
+  padding: 10px 0px 0px 10px;
+
+}
+
+.editcard {
+  background-color:rgb(21, 21, 182);
+  color: white;
+  padding: 10px;
+  float: right;
+}
+
+.editcard:hover {
+  background-color:rgb(53, 103, 240)
+}
 
 /*-------------- New Entry ----------*/
 
 .enterinformation {
   background:rgba(255, 255, 255, 0.5);
-  box-shadow: 4px 4px 16px 4px rgb(85, 85, 85, 0.75);
+  box-shadow: 4px 4px 16px 4px rgb(51, 51, 51, 0.75);
   width: 50%;
   height: 100%;
   padding: 10px;
   margin: auto;
 }
+
