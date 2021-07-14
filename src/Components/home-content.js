@@ -21,14 +21,16 @@ class HomeContent extends React.Component {
                     Together, NC 73241
                     </p>   
                     </div>
-                <br></br>
+
                 <br></br>
 
                 <div class="follow">               
                     <h6>Follow Us</h6>
-                  <img src="https://i.pinimg.com/originals/48/52/a5/4852a5cb7f4ad9a76365651cc3fa440c.png" height="200px" width="200px"></img>
+                  <img src="https://i.pinimg.com/originals/48/52/a5/4852a5cb7f4ad9a76365651cc3fa440c.png" height="100px" width="100px"></img>
                 </div>
+
                 <br></br>
+
                 <div class="resources">
                <h6>Resources</h6>
                 <p id="resourceinfo"><a href="#" id="resourcelinks">www.carolinafintechhub.org</a>
@@ -41,10 +43,7 @@ class HomeContent extends React.Component {
                 </p>
                 </div>
 
-</div>
- 
-
-            
+</div>        
                     
         );
     }

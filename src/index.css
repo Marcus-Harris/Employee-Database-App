@@ -65,13 +65,6 @@ code {
   cursor: pointer;
 }
 
-/*-------------Background image -------------- */
-
-.body {
-  background-image: url("https://i.pinimg.com/originals/62/63/5b/62635bfd6f5c20e3666f27e015191bde.jpg");
-  background-repeat:no-repeat;
-  background-size: cover;
-}
 
 /*------------------Hero/home page ------------------ */
 
@@ -79,9 +72,10 @@ code {
   position: relative;
   width: 100%;
 }
-h2 {
+#win {
   font-family: 'Montserrat';
   font-size: 40px;
+  text-shadow: 0px 6px 10px 6px #000;
 }
 
 .image {
@@ -102,8 +96,8 @@ h2 {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .75s ease;
-  background-color: rgb(21, 21, 182);
+  transition: 1s ease;
+  background-color: rgb(80, 80, 80);
 }
 
 .news:hover .paragraph {
@@ -111,7 +105,7 @@ h2 {
 }
 
 .text {
-  color: rgb(148, 203, 255);
+  color: #fff;
   font-size: 25px;
   position: absolute;
   top: 50%;
@@ -142,8 +136,9 @@ h2 {
 .bottom-info {
   column-count: 3;
   column-gap: 40px;
-  height: 400px;
-  justify-content: center;
+  height: 200px;
+  width: 100%;
+  float: center;
 }
 
 .contactus {
@@ -184,4 +179,43 @@ h2 {
 #resourcelinks:hover {
   font-weight: bold;
   font-style: none;
+}
+
+/*------------- Editing Profile Page --------------- */
+
+#name {
+  font-size: 20px;
+}
+#profileemail {
+  font-size: 16px;
+}
+
+.profileimage {
+  height: 200px;
+  width: 200px;
+  float: left;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.card-info {
+  background: rgba(59, 58, 58, 0.25);
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  box-shadow: 4px 4px 16px 4px #333;
+}
+
+
+/*-------------- New Entry ----------*/
+
+.enterinformation {
+  background:rgba(255, 255, 255, 0.5);
+  box-shadow: 4px 4px 16px 4px rgb(85, 85, 85, 0.75);
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  margin: auto;
 }
