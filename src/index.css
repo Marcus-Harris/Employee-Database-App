@@ -7,7 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
-}
+  background-image: url("https://i.pinimg.com/originals/62/63/5b/62635bfd6f5c20e3666f27e015191bde.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+} 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -61,3 +64,183 @@ code {
 #navBarLogo {
   cursor: pointer;
 }
+
+
+/*------------------Hero/home page ------------------ */
+
+.news {
+  position: relative;
+  width: 100%;
+}
+#win {
+  font-family: 'Montserrat';
+  font-size: 40px;
+  text-shadow: 0px 6px 10px 6px #000;
+}
+
+.image {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 6px 11px 6px rgba(0, 0, 0, 0.25);
+}
+
+.paragraph {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: rgb(80, 80, 80);
+}
+
+.news:hover .paragraph {
+  opacity: 75%;
+}
+
+.text {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#findoutmore {
+  background:white;
+  color: black;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px;
+}
+
+#findoutmore:hover {
+  background:rgb(85, 85, 85);
+  color: white;
+  font-weight: bolder;
+}
+
+/*---------------- Contact, Social Media, and Resource information ---------- */
+
+.bottom-info {
+  column-count: 3;
+  column-gap: 40px;
+  height: 200px;
+  width: 100%;
+  float: center;
+}
+
+.contactus {
+  line-height: 10px;
+}
+#emailheader {
+  font-weight: bold;
+  font-size: 14px;
+}
+#emailinfo {
+  font-size: 12px;
+}
+
+#phonenumberheader {
+  font-weight: bold;
+  font-size: 14px;
+}
+#phonenumber {
+  font-size: 12px;
+}
+
+#addressheader {
+  font-weight: bold;
+  font-size: 14px;
+}
+#address {
+  font-size: 12px;
+}
+
+#resourceinfo {
+  font-size: 12px;
+}
+
+#resourcelinks {
+  color:rgb(21, 21, 182);
+}
+
+#resourcelinks:hover {
+  font-weight: bold;
+  font-style: none;
+}
+
+/*------------- Editing Profile Page --------------- */
+
+#name {
+  font-size: 20px;
+}
+#profileemail {
+  font-size: 16px;
+}
+
+.profileimage {
+  height: 200px;
+  width: 200px;
+  float: left;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.card-info {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  box-shadow: 4px 4px 16px 4px rgb(51, 51, 51, 0.75);
+}
+
+
+.information {
+  line-height: 10px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  height: 220px;
+  width: 100%;
+  background-color: darkgray;
+  color: white;
+  margin: auto;
+  padding: 10px 0px 0px 10px;
+
+}
+
+.editcard {
+  background-color:rgb(21, 21, 182);
+  color: white;
+  padding: 10px;
+  float: right;
+}
+
+.editcard:hover {
+  background-color:rgb(53, 103, 240)
+}
+
+/*-------------- New Entry ----------*/
+
+.enterinformation {
+  background:rgba(255, 255, 255, 0.5);
+  box-shadow: 4px 4px 16px 4px rgb(51, 51, 51, 0.75);
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  margin: auto;
+}
+

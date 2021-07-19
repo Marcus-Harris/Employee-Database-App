@@ -11,6 +11,7 @@ class Footer extends React.Component {
                         Auth0
                     </a>
                 </p>
+                
             </footer>
         );
     }

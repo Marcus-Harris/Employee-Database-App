@@ -9,6 +9,7 @@ import GroupIcon from "@material-ui/icons/Group";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import HomeContent from "./home-content";
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -86,6 +87,7 @@ export default function AddEmployee() {
   }
 
   return (
+    <div class="enterinformation">
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
@@ -171,7 +173,14 @@ export default function AddEmployee() {
         <Typography style={{ margin: 7 }} variant="body1">
           Status: {message}
         </Typography>
+        <br></br><br></br>
       </div>
+      
+
     </Container>
+
+    
+    </div>
+
   );
 }
