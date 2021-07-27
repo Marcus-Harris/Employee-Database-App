@@ -5,7 +5,7 @@ import AuthNav from "./auth-nav";
 class NavBar extends React.Component {
 
 
-    currentBG = true;
+    currentBG = null;
     body = document.getElementById("body");
 
     changeBG = () => {

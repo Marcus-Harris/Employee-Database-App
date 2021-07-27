@@ -1,6 +1,10 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "employee-database-app",
+  "description": "a really cool database app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "proxy": "http://localhost:8080",
   "private": true,
   "dependencies": {
