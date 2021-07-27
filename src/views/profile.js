@@ -35,7 +35,7 @@ class Profile extends React.Component {
                     
                     <pre className="information">
                         {/* {JSON.stringify(user, null, 2)} */}
-                        <a href="http://www.google.com" target="_blank"><input type="button" class="editcard" value="Edit Card" /></a>
+                        <a href="http://www.google.com" target="_blank"><input type="button" class="editcard" value="Google" /></a>
 
                         <br></br><br></br>
                         <h6>Name:</h6> {user.name}
