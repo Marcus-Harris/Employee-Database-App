@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 class HomeContent extends React.Component {
     render() {
@@ -10,10 +8,10 @@ class HomeContent extends React.Component {
                     <div class="contactus">
                     <h6>Contact Us </h6>
                     <p id="emailheader">Email:</p>
-                    <p id="emailinfo"><a href="#" id="resourcelinks">powerhouseteam@sevenindividuals.com </a></p>
+                    <p id="emailinfo"><a href="#" id="resourcelinks">powerhouseteam@sevenindividuals.com</a></p>
                     <p id="phonenumberheader">
                     Phone Number: </p>
-                    <p id="phonenumber"> 123-456-7890</p>
+                    <p id="phonenumber"> (123) 456-7890</p>
                     <p id="addressheader">Address</p> 
                     <p id="address">
                     980 Teamwork Path
@@ -35,7 +33,7 @@ class HomeContent extends React.Component {
                <h6>Resources</h6>
                 <p id="resourceinfo"><a href="#" id="resourcelinks">www.carolinafintechhub.org</a>
                     <br></br>
-                    <a href="#" id="resourcelinks"> www.group6.gov</a>
+                    <a href="#" id="resourcelinks"> www.group5.gov</a>
                     <br></br>
                     <a href="#" id="resourcelinks">www.powerhouse.org</a>
                     <br></br>

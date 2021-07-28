@@ -12,7 +12,6 @@ import GroupIcon from "@material-ui/icons/Group";
 import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaTrash } from "react-icons/fa";
 
 const useStyles = makeStyles(theme => ({

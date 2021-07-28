@@ -244,3 +244,6 @@ code {
   margin: auto;
 }
 
+.navButtons {
+  width: 10px !important;
+}
