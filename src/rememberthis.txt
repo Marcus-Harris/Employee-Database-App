@@ -1,1 +1,0 @@
-"proxy": "http://localhost:8080", --- PUT THIS IN THE PACKGE.JSON IF THIS THROWS AN ERROR

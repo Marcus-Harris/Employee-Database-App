@@ -12,6 +12,8 @@ import GroupIcon from "@material-ui/icons/Group";
 import { Link } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import CircularProgress from "@material-ui/core/CircularProgress";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaTrash } from "react-icons/fa";
 
 const useStyles = makeStyles(theme => ({
   table: {
@@ -44,19 +46,26 @@ const useStyles = makeStyles(theme => ({
 
 export default function SimpleTable() {
   const classes = useStyles();
-
+  const [message, setMessage] = React.useState("Delete unsuccessful");
   const [data, upDateData] = React.useState([]);
   const [firstLoad, setLoad] = React.useState(true);
   let isLoading = true;
 
-  async function sampleFunc() {
+  async function retrieveInfo() {
     let response = await fetch("/api/employee");
     let body = await response.json();
     upDateData(body);
   }
 
+  function removeEntry(id) {
+    fetch(`/api/employee/${id}`, { method: 'DELETE' })
+      .then(() => setMessage({ message: 'Delete successful' }))
+      .then(() => retrieveInfo());
+    console.log(message);
+  }
+
   if (firstLoad) {
-    sampleFunc();
+    retrieveInfo();
     setLoad(false);
   }
 
@@ -84,16 +93,18 @@ export default function SimpleTable() {
                 <TableCell align="center">Name</TableCell>
                 <TableCell align="center">Department</TableCell>
                 <TableCell align="center">Gender</TableCell>
-                <TableCell align="center">Dob</TableCell>
+                <TableCell align="center">D.O.B.</TableCell>
+                <TableCell align="center"></TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {data?.map(row => (
                 <TableRow key={row.name}>
-                  <TableCell align="center">{row.name}</TableCell>
+                  <TableCell align="center"><a href={`http://localhost:8080/api/employee/${row.id}`} target="_blank">{row.name}</a></TableCell>
                   <TableCell align="center">{row.department}</TableCell>
                   <TableCell align="center">{row.gender}</TableCell>
                   <TableCell align="center">{row.dob}</TableCell>
+                  <TableCell align="center"><button onClick={() => removeEntry(row.id)}><FaTrash /></button></TableCell>
                 </TableRow>
               ))}
             </TableBody>

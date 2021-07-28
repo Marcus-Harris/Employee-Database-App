@@ -4,7 +4,6 @@ import AuthNav from "./auth-nav";
 
 class NavBar extends React.Component {
 
-
     currentBG = null;
     body = document.getElementById("body");
 
